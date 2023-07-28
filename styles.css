@@ -183,17 +183,20 @@ body {
         left: 10%;
         top: 67%;
     }
-
+.terminos p{
+    width: 300px;
+}
     .botones {
         width: 80%;
         left: 10%;
-        top: 70%;
+        top: 72%;
     }
 
     .btn-encriptar,
     .btn-desencriptar {
-        width: 48%;
+        width: 70%;
         border-radius: 16px;
+        font-size: 10px;
     }
 
     .btn-encriptar:hover,
