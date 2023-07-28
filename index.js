@@ -49,3 +49,4 @@ function desencriptar() {
         swal("Ooops!", "Debes ingresar un texto", "warning");
     }
 }
+

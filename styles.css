@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     background-color: #000;
     color: #00ff00;
@@ -5,13 +6,20 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .container {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url('https://img.freepik.com/vector-premium/diseno-superposicion-transmision-vivo-formas-abstractas-superposicion-juegos-futuristas-vector-borde-transmision-sobre-fondo-oscuro-superposicion-juegos-modernos-diseno-panel-pantalla-linea-color-rojo_585735-1422.jpg?w=900') no-repeat center center;
-    background-size: cover;
+    overflow: hidden; /* Añadimos overflow: hidden para asegurar que la imagen no se desborde */
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La imagen se ajustará para cubrir todo el contenedor */
+    z-index: -1; /* Colocamos la imagen detrás de los demás elementos */
 }
 
 .texto {
@@ -122,7 +130,7 @@ body {
     gap: 16px;
     position: absolute;
     width: 100%;
-    top: 65%;
+    top: 30%;
     text-align: center;
 }
 
@@ -174,10 +182,6 @@ body {
         width: 80%;
         left: 10%;
         top: 67%;
-    }
-
-    .terminos p {
-        font-size: 16px;
     }
 
     .botones {
