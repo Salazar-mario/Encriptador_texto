@@ -152,14 +152,6 @@ body {
     color: #00ff00;
 }
 
-.encriptado img {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 10px;
-    left: 10px;
-}
-
 /* Responsive design */
 @media (max-width: 57.5em) {
     .container {
@@ -212,15 +204,17 @@ body {
         left: 10%;
         top: 80%;
     }
-
+}
+@media (max-width: 767px) {
     .mensaje-encriptado {
-        width: 100%;
-        top: 5%;
+        top: 0%; /* Ajusta la posición en pantallas más pequeñas */
     }
 
-    .encriptado img {
-        top: 0;
-        display: none;
-        visibility: hidden;
+    .mensaje-encriptado h2 {
+        font-size: 12px; /* Reduce el tamaño del h2 en pantallas más pequeñas */
+    }
+
+    .mensaje-encriptado p {
+        font-size: 8px; /* Reduce el tamaño del párrafo en pantallas más pequeñas */
     }
 }
